@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Favicon -->
+        <link rel = "icon" type="image/png" href="images/favicons/plate.ico">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Figtree:300,400,500,600,700,800,900'>  
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/7e99bb786c.js" crossorigin="anonymous"></script>
+        <title>Abby's Food Blog</title>
+    </head>
+<body>
+    <div class = "skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <a href = "index.html" id="logo">Abby's Food Blog</a>
+        <nav>
+            <ul>
+                <li><a href = "eating-in.html">Eating In</a></li>
+                <li><a href = "eating-out.html">Eating Out</a></li>
+                <li><a href = "about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id = "main">
+    <div class="controls">
+        <button type="button" class="control" data-filter="all">All</button>
+        <button type="button" class="control" data-filter=".brunch">Brunch</button>
+        <button type="button" class="control" data-filter=".meal">Lunch/Dinner</button>
+        <button type="button" class="control" data-filter=".dessert">Dessert</button>
+
+        <button type="button" class="control" data-sort="default:asc">Asc</button>
+        <button type="button" class="control" data-sort="default:desc">Desc</button>
+    </div>
+
+    <div class="container gallery">
+        <figure class = "mix meal">
+            <img src="images/eating_out/cpk.jpeg" alt="Two pizzas, one with barbecue and one with ham and pineapple">
+            <figcaption>Barbecue and Hawaiian pizzas from California Pizza Kitchen in Troy, Michigan</figcaption>
+        </figure>
+
+        <figure class = "mix dessert">
+            <img src="images/eating_out/gelato.jpeg" alt="Green and pink gelato cones pictured in streets of Venice">
+            <figcaption>Strawberry and mint gelato from the streets of Venice, Italy</figcaption>
+        </figure>
+
+        <figure class = "mix meal">
+            <img src="images/eating_out/iggys.jpeg" alt="Egg burger with background of Detroit">
+            <figcaption>Egg burger from Iggy's in Detroit, Michigan</figcaption>
+        </figure>
+
+        <figure class = "mix brunch">
+            <img src="images/eating_out/jonny_cakes.jpeg" alt="Two egg benedicts with hashbrowns">
+            <figcaption>Florentine benedict from Jonny Cakes Cafe in Troy, Michigan</figcaption>
+        </figure>
+
+        <figure class = "mix dessert">
+            <img src="images/eating_out/matcha_cake.jpeg" alt="Slice of layered matcha cake">
+            <figcaption>Lady M's Layered Matcha Cake from Gyu-Kaku BBQ in Chicago, Illinois</figcaption>
+        </figure>
+
+        <figure class = "mix dessert">
+            <img src="images/eating_out/matcha.jpeg" alt="Matcha ice cream cone">
+            <figcaption>Soft serve matcha ice cream cone from Premium Matcha Cafe Maiko in Troy, Michigan</figcaption>
+        </figure>
+
+        <figure class = "mix meal">
+            <img src="images/eating_out/paella.jpeg" alt="Seafood paella with big lobster in the middle">
+            <figcaption>Seafood paella from Bodega in Washington, D.C.</figcaption>
+        </figure>
+
+        <figure class = "mix brunch">
+            <img src="images/eating_out/poached.jpeg" alt="Meals of hashbrowns and veggie skillet with egg on top">
+            <figcaption>Veggie skillet from Poached in Troy, Michigan</figcaption>
+        </figure>
+
+        <figure class = "mix meal">
+            <img src="images/eating_out/sadako_udon.jpeg" alt="Two bowls of udon and salmon sushi">
+            <figcaption>Sadako Udon Lunch Meal from Sadako in Ann Arbor, Michigan</figcaption>
+        </figure>
+
+        <figure class = "mix brunch">
+            <img src="images/eating_out/shine_cafe.jpeg" alt="Waffles drizzled with strawberries, chocolate, and vanilla">
+            <figcaption>Sweetheart Waffles from Shine Cafe in Troy, Michigan</figcaption>
+        </figure>
+
+        <figure class = "mix meal">
+            <img src="images/eating_out/takoyaki.jpeg" alt="Seven fried octopus balls on a plate">
+            <figcaption>Sweetheart Waffles from Shine Cafe in Troy, Michigan</figcaption>
+        </figure>
+
+        <!-- <figure>
+            <img src="images/coffee4.jpg" alt="two cups of coffee one is a large latte with a heart in the milk foam the other is a small shot of espresso">
+            <figcaption>Dark $4.29</figcaption>
+        </figure> -->
+
+        <!-- <figure>
+            <img src="images/coffee5.jpg" alt="cup of hot coffee with lots of milk and three oatmeal cookies">
+            <figcaption>Dark Decaf $3.29</figcaption>
+        </figure> -->
+
+        <!-- <figure>
+            <img src="images/coffee8.jpg" alt="two shots of espresso being extracted into small cups">
+            <figcaption>Latte $5.99</figcaption>
+        </figure> -->
+
+        <!-- <figure>
+            <img src="images/coffee9.jpg" alt="cup of black coffee sitting on a bed of coffee beans">
+            <figcaption>Decaf $1.99</figcaption>
+        </figure> -->
+    </div>
+    
+    </main>
+    
+</body>
+    <script src="js/mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('.container');
+
+        var mixer = mixitup(containerEl);
+    </script>
+</html>
