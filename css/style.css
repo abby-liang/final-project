@@ -101,7 +101,7 @@ nav ul > li a.current:hover {
   }
 
 .parallax {
-    background-image: url("/images/potluck.jpeg");
+    background-image: url("../images/potluck.jpeg");
     position: relative;
     min-height: 600px;
     background-attachment: fixed;
