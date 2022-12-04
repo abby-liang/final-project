@@ -41,9 +41,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px 10px 20px;
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1; */
     background-color: white;
 }
 
@@ -87,24 +87,34 @@ nav ul > li a.current:hover {
 }
 
 /* Skip section */
-.skip a {
+a.skip {
     top: -40px;
     background: white;
     left: 0;
     position: absolute;
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
-    z-index: 1;
+    z-index: 2;
+    width: 20%;
+    color: #595959;
   }
 
-  .skip a:focus {
-    position: absolute;
+  a.skip:focus {
     top: 0px;
   }
 
   :focus {
     border: 2px dotted #924F02;
   }
+
+  .skip + header {
+    /* First header remain visible upon scroll */
+    position: sticky;
+    /* Maintain 0px from top */
+    top: 0;
+    /* Stay in front of all other elements */
+    z-index: 1;
+}
 
 /* Hero Image */
 .parallax {
@@ -146,6 +156,18 @@ footer {
     color: #000;
     text-align: center;
     padding: 30px;
+    line-height: 25px;
+}
+
+footer a {
+    color:#595959;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover, footer a:focus {
+    text-decoration: underline;
+    color: #924F02;
 }
 
 /* Introduction */
@@ -204,11 +226,11 @@ figcaption {
     text-align: center;
 }
 
-#diversity .gallery p {
+.diversity-gallery p {
     font-size: 11px;
 }
 
-.gallery {
+.diversity-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -216,11 +238,11 @@ figcaption {
     gap: 10px;
 }
 
-.gallery div {
+.diversity-gallery div {
     width: 250px;
 }
 
-.gallery img {
+.diversity-gallery img {
     border: #924F02 3px solid;
 }
 
@@ -228,6 +250,10 @@ figcaption {
 .desc {
     text-align: center;
     margin: 20px 50px 30px 50px;
+}
+
+#mix {
+    background-color: #e5deca;
 }
 
 .controls {
@@ -271,8 +297,10 @@ figcaption {
 .container > figure > img {
     height: 350px;
     object-fit: cover;
+    border: 3px #595959 solid;
 }
 
+/* Favorite Feature */
 .container > figure > label {
     align-self: center;
     margin-top: 5px;
@@ -281,17 +309,12 @@ figcaption {
 }
 
 .container > figure > label > input {
-    display: none;
+    opacity: 0;
 }
 
 label p {
     font-size: 14px;
 }
-
-#mix {
-    background-color: #e5deca;
-}
-
 /* Eating In Grid */
 .grid {
     display: grid;
@@ -329,6 +352,14 @@ label p {
     border: black solid 1px;
 }
 
+.grid > div.item a {
+    transition: 0.3s;
+}
+
+.grid > div.item a:hover {
+    color: #924F02;
+}
+
 .grid > div h2, div a {
     font-weight: 600;
     margin-bottom: 10px;
@@ -350,6 +381,11 @@ label p {
     transition: 0.5s ease;
 }
 
+.others > div:focus {
+    opacity: 1;
+    padding: 20px;
+}
+
 .others:hover div {
     opacity: 1;
     padding: 20px;
@@ -364,12 +400,12 @@ label p {
     font-size: 15px;
 }
 
-.recipe:hover {
+.recipe:hover, .recipe:focus {
     font-style: italic;
     text-decoration: none;
 }
 
-.recipe:hover::after {
+.recipe:hover::after, .recipe:focus::after {
     content: " →";
 }
 
