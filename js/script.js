@@ -31,6 +31,6 @@ function addBorder(id) {
 }
 
 function removeBorder(id) {
-  id.previousSibling.previousSibling.style.border = "0";
+  id.previousSibling.previousSibling.style.border = "0px";
   console.log("Remove focus");
 }
