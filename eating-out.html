@@ -14,6 +14,15 @@
         <script src="https://kit.fontawesome.com/7e99bb786c.js" crossorigin="anonymous"></script>
         <title>Abby's Food Blog</title>
     </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TLS3G0J9N"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7TLS3G0J9N');
+    </script>
 <body>
     <div class = "skip"><a href="#main">Skip to Main Content</a></div>
     <header>
@@ -21,8 +30,7 @@
         <nav>
             <ul>
                 <li><a href = "eating-in.html">Eating In</a></li>
-                <li><a href = "eating-out.html">Eating Out</a></li>
-                <li><a href = "about.html">About</a></li>
+                <li><a href = "eating-out.html" class = "current">Eating Out</a></li>
             </ul>
         </nav>
     </header>
@@ -38,8 +46,6 @@
         <button type="button" class="control" data-filter=".dessert">Dessert</button>
         <button type="button" class="control" id = "yourFavorites" data-filter=".favorite">Your Favorites</button>
     </div>
-
-    <!-- <div id = "print" onclick="window.print()">Click to Print and Save Your Favorites</div> -->
 
     <div class="container gallery">
         <figure class = "mix meal">
@@ -169,9 +175,10 @@
         </figure>
     </div>
 </div>
-    
     </main>
-    <footer>hello</footer>
+    <footer>
+        <p>&copy; Abby Liang, 2022</p>
+    </footer>
 </body>
     <script src="js/mixitup.min.js"></script>
     <script src="js/script.js"></script>

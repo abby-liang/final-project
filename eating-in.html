@@ -14,6 +14,15 @@
         <script src="https://kit.fontawesome.com/7e99bb786c.js" crossorigin="anonymous"></script>
         <title>Abby's Food Blog</title>
     </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TLS3G0J9N"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7TLS3G0J9N');
+    </script>
 <body>
     <div class = "skip"><a href="#main">Skip to Main Content</a></div>
     <header>
@@ -22,7 +31,6 @@
             <ul>
                 <li><a href = "eating-in.html" class = "current">Eating In</a></li>
                 <li><a href = "eating-out.html">Eating Out</a></li>
-                <li><a href = "about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -33,41 +41,84 @@
     
     
     <div class = "grid">
-        <div class = "break"><h2>Top Cook-At-Home Meals</h2></div>
-        <div><img src = "images/eating_in/brussel_sprouts.jpeg"></div>
-        <div class = "item"><h2>Brussel Sprouts</h2></div>
-
-        <div><img src = "images/eating_in/burrata_salad_home.jpeg"></div>
+        <div class = "break">
+            <h2>Top Cook-At-Home Meals</h2>
+            <p>These recipes are the ones I follow when making these dishes, most of which are learned from my family.</p>
+        </div>
+        <div class = "top"><img src = "images/eating_in/brussel_sprouts.jpeg" alt = "Bowl of roasted brussel sprouts"></div>
+        <div class = "item">
+            <h2>Air Fryer Brussel Sprouts</h2>
+            <p>This recipe is easy, healthy, and tasty. All you need to do is cut the sprouts in half, mix with oil, salt and pepper, and put them in the air fryer for 10 minutes at 374ºF, flipping once in the middle.</p>
+        </div>
+        
+        <div class = "top"><img src = "images/eating_in/burrata_salad_home.jpeg" alt = "Bowl of spinach, burrata cheese, tomatoes, and apples"></div>
         <div class = "item">
             <h2>Burrata Salad</h2>
+            <p>Burrata salad is taken as inspiration from one of my favorite foods eating out, which is featured on my <a href = "eating-out.html">Eating Out</a> page. My version has spinach, tomatoes, apples, and burrata drizzled with olive oil, balsamic vinegar, salt, and vinegar.</p>
         </div>
 
-        <div><img src = "images/eating_in/salmon.jpeg"></div>
+        <div class = "top"><img src = "images/eating_in/salmon.jpeg" alt = "Air fried salmon"></div>
         <div class = "item">
             <h2>Salmon</h2>
+            <p>Air fried salmon is a fast recipe and a great source of protein. There are many ways to appraoch this, but I will put soy sauce, salt, and pepper on the filet, then air fry it for 25 minutes at 375ºF. Add more time if needed.</p>
         </div>
 
-        <div class = "break"><h2>Other Favorites</h2></div>
-        <div>
-            <img src = "images/eating_in/fried_rice.jpeg">
-        </div>
-        <div>
-            <img src = "images/eating_in/apple_pies.jpeg">
-        </div>
-        <div>
-            <img src = "images/eating_in/fried_tofu.jpeg">
-        </div>
-        <div>
-            <img src = "images/eating_in/omelet.jpeg">
-        </div>
-        <div>
-            <img src = "images/eating_in/soup_noodles.jpeg">
-        </div>
-        <div>
-            <img src = "images/eating_in/grape_tomato.jpeg">
+        <div class = "top"><img src = "images/eating_in/fried_rice.jpeg" alt = "Fried rice with shrimp and vegetables"></div>
+        <div class = "item">
+            <h2>Fried Rice</h2>
+            <p>Fried rice is a classic Chinese dish. It is super customizable (add choice of protein, if any) and is great with leftover rice. I like to fry my rice with peas, corn, and carrots, adding soy sauce, oyster sauce, salt, and pepper to taste.</p>
         </div>
 
+        <div class = "break">
+            <h2>Other Favorites</h2>
+            <p>On hover, click to view a recipe for the meal.</p>
+        </div>
+        <div class = "others">
+            <img src = "images/eating_in/broccoli_chicken.jpeg" alt = "Plate of rice, broccoli, and chicken">
+            <div>
+                <h3>Broccoli and Chicken Stirfry</h3>
+                <p><a href = "https://www.foodnetwork.com/recipes/food-network-kitchen/chicken-and-broccoli-stir-fry-recipe-1942670"  class = "recipe" target = "_blank">View recipe</a></p>
+            </div>
+        </div>
+        <div class = "others">
+            <img src = "images/eating_in/apple_pies.jpeg" alt = "Five small apple pies">
+            <div>
+                <h3>Apple Turnovers</h3>
+                <p><a href = "https://momsdish.com/recipe/536/quick-apple-pies" class = "recipe" target = "_blank">View recipe</a></p>
+            </div>
+        </div>
+        <div class = "others">
+            <img src = "images/eating_in/fried_tofu.jpeg" alt = "Plate of fried tofu">
+            <div>
+                <h3>Fried Tofu</h3>
+                <p><a href = "https://theplantbasedschool.com/fried-tofu/#recipe" class = "recipe" target = "_blank">View recipe</a></p>
+            </div>
+        </div>
+        <div class = "others">
+            <img src = "images/eating_in/omelet.jpeg" alt = "Ham, cheese, tomato, and spinach omelet with ketchup">
+            <div>
+                <h3>Omelet</h3>
+                <p><a href = "https://www.topsmarkets.com/Recipes/Print/7361/Spinach%2C_Ham_and_Cheese_Omelet/" class = "recipe" target = "_blank">View recipe</a></p>
+            </div>
+        </div>
+        <div class = "others">
+            <img src = "images/eating_in/soup_noodles.jpeg" alt = "Bowl of noodles in soup, bokchoy, and meat">
+            <div>
+                <h3>Chinese Soup Noodles</h3>
+                <p><a href = "https://www.recipetineats.com/chinese-noodle-soup/" class = "recipe" target = "_blank">View recipe</a></p>
+            </div>
+        </div>
+        <div class = "others">
+            <img src = "images/eating_in/grape_tomato.jpeg" alt = "Plate of roasted grape tomatoes and burrata cheese">
+            <div>
+                <h3>Baked Burrata Pasta (from TikTok)</h3>
+                <p><a href = "https://www.washingtonpost.com/food/2021/02/11/baked-feta-pasta-recipe-tiktok/" class = "recipe" target = "_blank">View recipe</a></p>
+            </div>
+        </div>
     </div>
 </main>
+<footer>
+    <p>&copy; Abby Liang, 2022</p>
+</footer>
 </body>
 </html>

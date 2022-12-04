@@ -14,6 +14,15 @@
     <script src="https://kit.fontawesome.com/7e99bb786c.js" crossorigin="anonymous"></script>
     <title>Abby's Food Blog</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7TLS3G0J9N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7TLS3G0J9N');
+</script>
 <body>
     <div class = "skip"><a href="#main">Skip to Main Content</a></div>
     <header>
@@ -22,7 +31,6 @@
             <ul>
                 <li><a href = "eating-in.html">Eating In</a></li>
                 <li><a href = "eating-out.html">Eating Out</a></li>
-                <li><a href = "about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +41,7 @@
                 <h1>Welcome to Abby's food blog!</h1>
             </div>
             <div class = "down-icon">
-                <a href = "#intro"><i class="fa-solid fa-chevron-down fa-3x"></i></a>
+                <a href = "#intro" aria-label = "Move to intro"><i class="fa-solid fa-chevron-down fa-3x"></i></a>
             </div>
         </div>
         <div class = "info" id = "intro">
@@ -44,18 +52,50 @@
                 </figure>
             </div>
             <div class = "intro-paragraph">
-                <h1>Hello! My name is Abby and I am a big foodie. 😋</h1>
-                <p>I believe that good food can make a day better. Food can connect people, cultures, and communities together.<br><br>
-                    
-                In this blog, I will show you some of my favorite foods that I have had eating in and eating out. There will be some of my personal recipes on the <a href = eating-in.html>Eating In</a> page and some food recommendations on the <a href = eating-out.html>Eating Out</a> page, so be sure to check them out!<br><br>
+                <h1>Hello! My name is Abby and I am a big foodie.</h1>
+                <p>I believe that good food can make a day better. Food can connect people, cultures, and communities together. Read more about diversity in food in the <a href = "#diversity">section below</a>.</p>
+                <br>
+                <p>In this blog, I will show you some of my favorite foods that I have had eating in and eating out. 
+                <br><br>
+                    <ul>
+                        <li>The <a href = eating-in.html>Eating In</a> page contains featured recipes (with images of my own cooking) to cook as a college student. Several recipes are my own and others are from online!
+                        <li>The <a href = eating-out.html>Eating Out</a> page showcases my food photography and cool food I have eaten and can't cook myself so be sure to check them out! You can sort and select favorites there, too.</li>
+                    </ul>
 
-                The <a href = about.html>About</a> page has more about who I am and some of my favorite things, from favorite cuisine to favorite food reality TV.
                 </p>
-                <!-- <img src = "images/kura.jpeg" /> -->
             </div>
         </div>
-    
+        <div id = "diversity">
+            <h2>Diversity in Food</h2>
+            <p id = "diversity-info">From potlucks to food trucks, food can teach us so much about each other, our cultures, and our values — whether through the actual food itself, the recipe, or the conversations that stem from it.</p>
+        
+            <div class = "gallery">
+                <div>
+                    <img src = "images/gallery/cheers.jpeg" alt = "">
+                    <p>&copy; The Gender Spectrum Collection by VICE</p>
+                </div>
+                <div>
+                    <img src = "images/gallery/dinner.jpeg" alt = "">
+                    <p>&copy; Medsile via Iwaria</p>
+                </div>                
+                <div>
+                    <img src = "images/gallery/food-truck.jpg" alt = "">
+                    <p>&copy; micheile dot com via Unsplash</p>
+                </div>                
+                <div>
+                    <img src = "images/gallery/oven.jpeg" alt = "">
+                    <p>&copy; Byaimeevia via Iwaria</p>
+                </div>                
+                <div>
+                    <img src = "images/gallery/coworkers.jpg" alt = "">
+                    <p>&copy; sabrinafvholder via Nappy</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
+    <footer>
+        <p>&copy; Abby Liang, 2022</p>
+    </footer>
 </body>
-
 </html>
