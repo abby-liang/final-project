@@ -27,6 +27,7 @@ p {
     font-size: 18px;
 }
 
+/* Header */
 #logo {
     font-size: 50px;
     text-decoration: none;
@@ -70,7 +71,6 @@ nav ul > li a:visited {
     color: black;
 }
 
-/* need to show current beyond color */
 nav ul > li a.current {
     background-color: #924F02;
     color: white;
@@ -106,6 +106,7 @@ nav ul > li a.current:hover {
     border: 2px dotted #924F02;
   }
 
+/* Hero Image */
 .parallax {
     background-image: url("../images/potluck.jpeg");
     position: relative;
@@ -116,12 +117,6 @@ nav ul > li a.current:hover {
     background-size: cover;
     text-align: center;
     display: block;
-}
-
-footer {
-    color: #000;
-    text-align: center;
-    padding: 30px;
 }
 
 .parallax {
@@ -146,6 +141,14 @@ footer {
     color: white;
 }
 
+/* Footer */
+footer {
+    color: #000;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Introduction */
 .info {
     display: flex;
     flex-wrap: wrap;
@@ -177,22 +180,6 @@ footer {
     padding-left: 5px;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 10px;
-}
-
-.gallery div {
-    width: 250px;
-}
-
-.gallery img {
-    border: #595959 3px solid;
-}
-
 figure {
     display: flex;
     flex-direction: column;
@@ -205,6 +192,7 @@ figcaption {
     font-size: 15px;
 }
 
+/* Diversity in Food Section */
 #diversity {
     background-color: #e5deca;
     padding: 25px;
@@ -218,6 +206,28 @@ figcaption {
 
 #diversity .gallery p {
     font-size: 11px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.gallery div {
+    width: 250px;
+}
+
+.gallery img {
+    border: #924F02 3px solid;
+}
+
+/* Mix It Up Flex */
+.desc {
+    text-align: center;
+    margin: 20px 50px 30px 50px;
 }
 
 .controls {
@@ -278,15 +288,11 @@ label p {
     font-size: 14px;
 }
 
-.desc {
-    text-align: center;
-    margin: 20px 50px 30px 50px;
-}
-
 #mix {
     background-color: #e5deca;
 }
 
+/* Eating In Grid */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -335,11 +341,8 @@ label p {
 
 .others div {
     position: absolute;
-    /* top: 0;
-    left: 0; */
     bottom: 0;
     right: 0;
-    /* height: 10%; */
     width: 100%;
     background-color: #924F02;
     color: #fff;
@@ -375,10 +378,7 @@ label p {
 }
 
 @media screen and (min-width: 768px){
-    .info {
-        flex-wrap: nowrap;
-    }
-
+    /* Home Page */
     header {
         flex-direction: row;
     }
@@ -387,10 +387,15 @@ label p {
         font-size: 40px;
     }
 
+    .info {
+        flex-wrap: nowrap;
+    }
+
     .info .intro-paragraph {
         padding-top: 5%;
     }
 
+    /* Eating Out Page */
     .container {
         justify-content: space-evenly;
         row-gap: 20px;
@@ -404,6 +409,7 @@ label p {
         color: #595959;
     }
 
+    /* Eating In Page */
     .grid {
         grid-template-columns: 1fr 1fr 1fr; 
     }
@@ -433,6 +439,7 @@ label p {
 }
 
 @media screen and (min-width: 1024px){
+    /* Homepage */
     header {
         padding-left: 30px;
         padding-right: 50px;
@@ -442,6 +449,7 @@ label p {
         width: 45%;
     }
 
+    /* Eating In Page */
     .grid {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -462,7 +470,5 @@ label p {
 
     .grid div:nth-last-child(2) {
         grid-column: 2 / span 1;
-    }
-
-    
+    }  
 }
