@@ -24,7 +24,3 @@ function fave(id) {
     food.classList.remove("favorite");
   }
 }
-
-// document.querySelector("#yourFavorites").addEventListener("click", function() {
-// 	// document.querySelector("#print").style.display = "inline";
-// });
