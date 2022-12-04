@@ -10,7 +10,7 @@ h1 {
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    margin: 10px;
+    margin: 15px;
 }
 
 h2 {
@@ -41,9 +41,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px 10px 20px;
-    /* position: sticky;
-    top: 0;
-    z-index: 1; */
     background-color: white;
 }
 
@@ -88,7 +85,7 @@ nav ul > li a.current:hover {
 
 /* Skip section */
 a.skip {
-    top: -40px;
+    top: -60px;
     background: white;
     left: 0;
     position: absolute;
@@ -291,7 +288,7 @@ figcaption {
 }
 
 .container > figure {
-    width: 300px;
+    width: 375px;
 }
 
 .container > figure > img {
@@ -327,12 +324,22 @@ label p {
     grid-column: 1 / -1;
 }
 
+.grid > .top img {
+    height: 450px;
+}
+
 .grid > div.break {
     grid-column: 1 / -1;
     padding: 20px;
     background: #e5deca;
     margin-bottom: 10px;
     width: 100%;
+    text-align: center;
+}
+
+.grid > div.break p {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .grid > div.top, div.item {
@@ -453,13 +460,16 @@ label p {
     .grid > .top {
         grid-column: 1 / span 1;
     }
+
+    .grid > .top img {
+        height: auto;
+    }
     
     .grid > div.break {
         grid-column: 1 / -1;
         padding: 20px;
         background: #e5deca;
         margin-bottom: 10px;
-        text-align: center;
     }
     
     .grid > div.break:not(:first-child) {
@@ -483,6 +493,11 @@ label p {
 
     .info div:first-of-type {
         width: 45%;
+    }
+
+    /* Eating Out Page */
+    .container > figure  {
+        flex-basis: 300px;
     }
 
     /* Eating In Page */
