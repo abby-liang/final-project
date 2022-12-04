@@ -24,3 +24,13 @@ function fave(id) {
     food.classList.remove("favorite");
   }
 }
+
+function addBorder(id) {
+  id.previousSibling.previousSibling.style.border = "2px dotted #924F02";
+  console.log("Add focus");
+}
+
+function removeBorder(id) {
+  id.previousSibling.previousSibling.style.border = "0";
+  console.log("Remove focus");
+}
