@@ -23,8 +23,8 @@
 
   gtag('config', 'G-7TLS3G0J9N');
 </script>
-<body>
-    <div class = "skip"><a href="#main">Skip to Main Content</a></div>
+<body id = "top">
+    <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
         <a href = "index.html" id="logo">Abby's Food Blog</a>
         <nav>
@@ -44,7 +44,7 @@
                 <a href = "#intro" aria-label = "Move to intro"><i class="fa-solid fa-chevron-down fa-3x"></i></a>
             </div>
         </div>
-        <div class = "info" id = "intro">
+        <div class = "info" id = "intro" tabindex="0">
             <div>
                 <figure>
                     <img src = "images/ice_cream.jpeg" alt = "Me posing with ice cream">
@@ -65,11 +65,11 @@
                 </p>
             </div>
         </div>
-        <div id = "diversity">
+        <div id = "diversity" tabindex="0">
             <h2>Diversity in Food</h2>
             <p id = "diversity-info">From potlucks to food trucks, food can teach us so much about each other, our cultures, and our values — whether through the actual food itself, the recipe, or the conversations that stem from it.</p>
         
-            <div class = "gallery">
+            <div class = "diversity-gallery">
                 <div>
                     <img src = "images/gallery/cheers.jpeg" alt = "Group clinking glasses with charcuterie plate on table">
                     <p>&copy; The Gender Spectrum Collection by VICE</p>
@@ -96,6 +96,7 @@
     </main>
     <footer>
         <p>&copy; Abby Liang, 2022</p>
+        <a href = "#top">Back to Top &#8593;</a>
     </footer>
 </body>
 </html>
