@@ -302,6 +302,7 @@ figcaption {
 
 /* Favorite Feature */
 .container > figure > label {
+    display: flex;
     align-self: center;
     margin-top: 5px;
     color: #595959;
@@ -446,6 +447,7 @@ label p {
         justify-content: space-evenly;
         margin-left: 10px;
         margin-right: 10px;
+        row-gap: 25px;
     }
 
     .container > figure > label {
