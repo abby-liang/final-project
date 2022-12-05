@@ -72,6 +72,7 @@ nav ul > li a.current {
     background-color: #924F02;
     color: white;
     padding: 10px 20px 10px 20px;
+    text-decoration: underline;
 }
 
 nav ul > li a:hover {
