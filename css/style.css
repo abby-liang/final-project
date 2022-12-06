@@ -106,7 +106,7 @@ a.skip {
     border: 2px dotted #924F02;
   }
 
-  .skip + header {
+  .skip {
     /* First header remain visible upon scroll */
     position: sticky;
     /* Maintain 0px from top */
@@ -428,6 +428,10 @@ label p {
     /* Home Page */
     header {
         flex-direction: row;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    
     }
 
     #logo {
